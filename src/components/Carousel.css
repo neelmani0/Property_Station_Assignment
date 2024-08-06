@@ -86,5 +86,99 @@
 
 .view-more-button:hover {
   background-color: #f4f7fa;
+  color: #111214;
 }
 
+
+@media (max-width: 768px) {
+  .carousel-container {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .carousel-header {
+    margin-bottom: 20px;
+  }
+  
+  .carousel-heading-italic {
+    font-size: 1.5em;
+    font-style: italic;
+    margin: 0;
+  }
+  
+  .carousel-heading-normal {
+    font-size: 2em;
+    margin: 0;
+  }
+  
+  .carousel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+  
+  .carousel-cards {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .carousel-button {
+    background: transparent;
+    border: none;
+    font-size: 2em;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
+  }
+  
+  .carousel-button.left {
+    left: 10px;
+  }
+  
+  .carousel-button.right {
+    right: 10px;
+  }
+  
+  .card {
+    transition: transform 0.5s, opacity 0.5s;
+    position: relative;
+    flex: 0 0 30%;
+    margin: 0 10px;
+  }
+  
+  .card.side {
+    transform: scale(0.8);
+    opacity: 0.5;
+    z-index: 1;
+  }
+  
+  .card.center {
+    transform: scale(1);
+    opacity: 1;
+    z-index: 2;
+  }
+  
+  .view-more-container {
+    margin-top: 20px;
+  }
+  
+  .view-more-button {
+    padding: 10px 20px;
+    font-size: 1em;
+    background-color: #111214;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .view-more-button:hover {
+    background-color: #f4f7fa;
+    color: #111214;
+  }
+}
